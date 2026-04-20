@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button'
 import { HyperspaceBackground } from "@/components/ui/hyperspace-background";
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -15,9 +16,11 @@ const HeroSection = () => {
           <p className='text-xl md:text-2xl max-w-[602px] text-center'>
             Design your own peripheral device and get it delivered to you.
           </p>
-          <Button className='bg-black border-2 border-[#CCC7C7] px-16 py-5 hover:bg-white hover:text-black transition-colors'>
-            Learn More
-          </Button>
+          <Link href={'#about'}>
+            <Button className='bg-black border-2 border-[#CCC7C7] px-16 py-5 hover:bg-white hover:text-black transition-colors'>
+              Learn More
+            </Button>
+          </Link>
       </div>
       
     </div>
